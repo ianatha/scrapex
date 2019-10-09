@@ -30,9 +30,9 @@ defmodule Scrapex.Mixfile do
 
   defp deps do
     [
-      {:exq, "~> 0.9.0"},
-      {:httpoison, "~> 0.10.0", optional: true},
-      {:hound, "~> 1.0" , optional: true},
+      {:exq, "~> 0.13.3"},
+      {:httpoison, "~> 1.6", optional: true},
+      {:hound, "~> 1.1" , optional: true},
       {:credo, "~> 0.5", only: :dev},
       {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev, :docs]}
