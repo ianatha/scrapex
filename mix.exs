@@ -2,14 +2,14 @@ defmodule Scrapex.Mixfile do
   use Mix.Project
 
   @name "Scrapex"
-  @project_url "https://github.com/omohokcoj/scrapex"
-  @version "0.1.0"
+  @project_url "https://github.com/ianatha/scrapex"
+  @version "0.2.0"
   @description "Fast and robust web crawling/scraping tool in Elixir"
 
   def project do
     [
       app: :scrapex,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.5",
       source_url: @project_url,
       homepage_url: @project_url,
@@ -50,7 +50,7 @@ defmodule Scrapex.Mixfile do
   defp package do
     [name: :scrapex,
      files: ["lib", "mix.exs", "README*", "config"],
-     maintainers: ["Pete Matsyburka"],
+     maintainers: ["Ian Atha", "Pete Matsyburka"],
      licenses: ["MIT"],
      links: %{"GitHub" => @project_url,
               "Docs" => "https://hexdocs.pm/scrapex"}]
