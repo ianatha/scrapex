@@ -27,8 +27,8 @@ defmodule Scrapex.Crawler.Options do
 
       @default_options [
         crawler_name:     inspect(__MODULE__),
-        crawl_queue_name: Macro.underscore(__MODULE__),
-        data_queue_name:  Macro.underscore(__MODULE__),
+        crawl_queue_name: Macro.underscore(__MODULE__) <> "_crawler",
+        data_queue_name:  Macro.underscore(__MODULE__) <> "_data",
         max_retries:      Application.get_env(:scrapex, :max_retries,         @default_max_retries),
         crawl_queue_size: Application.get_env(:scrapex, :crawl_queue_size,    @default_crawl_queue_size),
         crawl_worker:     Application.get_env(:scrapex, :crawl_worker_module, @default_crawl_worker),
